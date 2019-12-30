@@ -1,0 +1,14 @@
+{
+	"january": ["grenat"],
+	"february": ["améthyste"],
+	"march": ["aquamarine", "héliotrope"],
+	"april": ["diamant"],
+	"may": ["émeraude"],
+	"june": ["alexandrite", "pierre de lune", "perle"],
+	"july": ["rubis"],
+	"august": ["péridot", "sardonyx", "spinel"],
+	"september": ["saphir"],
+	"october": ["opale", "tourmaline"],
+	"november": ["citrine", "topaze"],
+	"december": ["tanzanite", "turquoise", "zircon"]
+}

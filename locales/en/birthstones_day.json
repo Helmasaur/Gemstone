@@ -1,0 +1,9 @@
+{
+	"monday": ["pearl", "crystal"],
+	"tuesday": ["ruby", "emerald"],
+	"wednesday": ["amethyst", "lodestone"],
+	"thursday": ["sapphire", "carnelian"],
+	"friday": ["emerald", "cat's eye"],
+	"saturday": ["turquoise", "diamond"],
+	"sunday": ["topaz", "diamond"]
+}

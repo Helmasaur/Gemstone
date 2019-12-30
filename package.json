@@ -1,0 +1,36 @@
+{
+  "name": "birthgem",
+  "version": "1.0.0",
+  "description": "Determines the birthstones from the given month, day of the week or zodiac sign.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helmasaur/Birthgem.git"
+  },
+  "keywords": [
+    "birth",
+    "birthday",
+    "birthstone",
+    "calendar",
+    "gem",
+    "gemstone",
+    "horoscope",
+    "stone",
+    "zodiac"
+  ],
+  "author": "Helmasaur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Helmasaur/Birthgem/issues"
+  },
+  "homepage": "https://github.com/Helmasaur/Birthgem#readme",
+  "devDependencies": {
+    "mocha": "^6.2.2"
+  }
+}
