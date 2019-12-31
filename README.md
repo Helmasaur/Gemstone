@@ -7,9 +7,12 @@ Determines the birthstones from the given month, day of the week or zodiac sign.
 
 *This is based on ekimng's [package](https://github.com/ekimng/birthstone).*
 
+- The stone names and zodiac signs names can be in different languages.
+- All results are returned into an array except for error codes which are negative integers.
+
 ## Installation
 
-You have to add this module to your NPM folder.
+You have to add this module to your npm modules folder.
 
 ```bash
 $ npm install birthgem
@@ -21,13 +24,11 @@ $ npm install birthgem
 
 ```js
 const acKeijiban = require('birthgem')('en');
-// Require with a language (format xx-YY) sets 'en'(format xx)
+// Require with a language (format xx-YY sets (format xx)
 const acKeijiban = require('birthgem')('en-US')
 // Require without an argument sets 'en'
 const acKeijiban = require('birthgem')();
 ```
-
-*The stone names and zodiac signs names can be displayed in different languages.*
 
 ### Displaying a month birthstone
 
@@ -36,7 +37,7 @@ const acKeijiban = require('birthgem')();
 console.log(birthgem.month());
 // Returns the birthstone of January (values: [1;12])
 console.log(birthgem.month(1));
-// Overload the default language
+// Overload the default language (format xx-YY sets (format xx)
 console.log(birthgem.month(1, 'fr'));
 ```
 
@@ -47,20 +48,19 @@ console.log(birthgem.month(1, 'fr'));
 console.log(birthgem.day());
 // Returns the birthstone of Monday (values: [1;7])
 console.log(birthgem.day(1));
-// Overloads the default language
+// Overloads the default language (format xx-YY sets (format xx)
 console.log(birthgem.day(1, 'fr'));
 ```
 
 ### Displaying a zodiac sign birthstone
 
 ```js
-// Returns the birthstone of the present day
-console.log(birthgem.zodiac());
-// Returns the birthstone of Monday (values: zodiac signs names and symbols)
+// Returns the birthstone of the zodiac sign Aries (values: zodiac signs names and symbols)
 console.log(birthgem.zodiac('aries'));
 console.log(birthgem.zodiac('♈');
-// Overload the default language
-console.log(birthgem.zodiac(1, 'fr'));
+// Overload the default language (format xx-YY sets (format xx)
+console.log(birthgem.zodiac('aries', 'fr'));
+console.log(birthgem.zodiac('♈', 'fr');
 ```
 
 ## Error management
@@ -90,5 +90,5 @@ Thanks to ekimng for the original package: [birthstone](https://github.com/ekimn
 
 ## License
 
-- My source code is published under [MIT License](https://github.com/Helmasaur/ac-keijiban/blob/master/LICENSE).
+- My source code is published under [MIT License](https://github.com/Helmasaur/birthgem/blob/master/LICENSE).
 - The original package is published under [MIT License](https://github.com/ekimng/birthstone/blob/master/LICENSE).
