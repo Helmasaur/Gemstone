@@ -23,11 +23,11 @@ $ npm install birthgem
 ### Importing the module
 
 ```js
-const acKeijiban = require('birthgem')('en');
+const birthgem = require('birthgem')('en');
 // Require with a language (format xx-YY sets (format xx)
-const acKeijiban = require('birthgem')('en-US')
+const birthgem = require('birthgem')('en-US')
 // Require without an argument sets 'en'
-const acKeijiban = require('birthgem')();
+const birthgem = require('birthgem')();
 ```
 
 ### Displaying a month birthstone
