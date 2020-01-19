@@ -1,6 +1,4 @@
-
-module.exports = defaultLanguage => { // Language format (xx-YY) verification
-
+module.exports = defaultLanguage => { 
 	return {
 		month: (month = new Date().getMonth() + 1, language = defaultLanguage) => {
 			return getGems(parseMonth(month), 'month', parseLanguage(language));
@@ -10,7 +8,12 @@ module.exports = defaultLanguage => { // Language format (xx-YY) verification
 		},
 		zodiac: (sign, language = defaultLanguage) => {
 			language = parseLanguage(language);
+			console.warn('DEPRECATED: zodiac support will be removed in next version. Use the package "zodiac-signs" instead.');
 			return getGems(parseZodiac(sign, language), 'zodiac', language)
+		},
+		getZodiacSymbols: () => {
+			console.warn('DEPRECATED: zodiac support will be removed in next version. Use the package "zodiac-signs" instead.');
+			return require('./locales/en/zodiac.json').symbols;
 		}
 	}
 }
@@ -52,60 +55,29 @@ const parseZodiac = (sign, language) => {
 	if (typeof sign !== 'string' || typeof sign === 'undefined' || sign === null) {
 		return -3;
 	}
+	sign = sign.toLowerCase();
 
-	let astrologyData;
+	let zodiac;
 	try {
-		astrologyData = require(`./locales/${language}/astrology.json`);
+		zodiac = require(`./locales/${language}/zodiac.json`);
 	}
 	catch {
-		astrologyData = require('./locales/en/astrology.json');
+		zodiac = require('./locales/en/zodiac.json');
 	}
 
-	switch (sign.toLowerCase()) {
-		case Object.values(astrologyData)[0]:
-		case '♈':
-			return 0;
-		case Object.values(astrologyData)[1]:
-		case '♉':
-			return 1;
-		case Object.values(astrologyData)[2]:
-		case '♊':
-			return 2;
-		case Object.values(astrologyData)[3]:
-		case '♋':
-			return 3;
-		case Object.values(astrologyData)[4]:
-		case '♌':
-			return 4;
-		case Object.values(astrologyData)[5]:
-		case '♍':
-			return 5;
-		case Object.values(astrologyData)[6]:
-		case '♎': 
-			return 6;
-		case Object.values(astrologyData)[7]:
-		case '♏':
-			return 7;
-		case Object.values(astrologyData)[8]:
-		case '♐':
-			return 8;
-		case Object.values(astrologyData)[9]:
-		case '♑':
-			return 9;
-		case Object.values(astrologyData)[10]:
-		case '♒':
-			return 10;
-		case Object.values(astrologyData)[11]:
-		case '♓':
-			return 11;
-		default:
-			return -3;
+	for (let i = 0; i < 12; i++) {
+		if (sign === zodiac.names[i] || sign === zodiac.symbols[i]) {
+			return i;
+		}
 	}
+
+	return -3;
 }
 
 const parseLanguage = language => {
 	const regex = new RegExp('^[a-z]{2}(-[A-Z]{2})?$');  // xx-YY
 
+	// Language format (xx-YY) verification
 	if (regex.test(language)) {
 		language = language.substring(0, 2);
 	}

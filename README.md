@@ -10,6 +10,8 @@ Determines the birthstones from the given month, day of the week or zodiac sign.
 - The stone names and zodiac signs names can be in different languages.
 - All results are returned into an array except for error codes which are negative integers.
 
+*Those functions are deprecated. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
+
 ## Installation
 
 You have to add this module to your npm modules folder.
@@ -53,6 +55,8 @@ console.log(birthgem.day(1, 'fr'));
 ```
 
 ### Displaying a zodiac sign birthstone
+
+*Those functions are deprecated. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
 
 ```js
 // Returns the birthstone of the zodiac sign Aries (values: zodiac signs names and symbols)
