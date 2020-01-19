@@ -10,7 +10,7 @@ Determines the birthstones from the given month, day of the week or zodiac sign.
 - The stone names and zodiac signs names can be in different languages.
 - All results are returned into an array except for error codes which are negative integers.
 
-*Those functions are deprecated. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
+*Functions dedicated to zodiac signs are deprecated. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
 
 ## Installation
 
