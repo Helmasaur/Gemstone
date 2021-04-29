@@ -5,15 +5,6 @@ module.exports = defaultLanguage => {
 		},
 		day: (day = new Date().getDay() + 1, language = defaultLanguage) => {
 			return getGems(parseDay(day), 'day', parseLanguage(language));
-		},
-		zodiac: (sign, language = defaultLanguage) => {
-			language = parseLanguage(language);
-			console.warn('DEPRECATED: zodiac support will be removed in next version. Use the package "zodiac-signs" instead.');
-			return getGems(parseZodiac(sign, language), 'zodiac', language)
-		},
-		getZodiacSymbols: () => {
-			console.warn('DEPRECATED: zodiac support will be removed in next version. Use the package "zodiac-signs" instead.');
-			return require('./locales/en/zodiac.json').symbols;
 		}
 	}
 }
@@ -49,29 +40,6 @@ const parseDay = day => {
 		return -2;
 	}
 	return day - 1;
-}
-
-const parseZodiac = (sign, language) => {
-	if (typeof sign !== 'string' || typeof sign === 'undefined' || sign === null) {
-		return -3;
-	}
-	sign = sign.toLowerCase();
-
-	let zodiac;
-	try {
-		zodiac = require(`./locales/${language}/zodiac.json`);
-	}
-	catch {
-		zodiac = require('./locales/en/zodiac.json');
-	}
-
-	for (let i = 0; i < 12; i++) {
-		if (sign === zodiac.names[i] || sign === zodiac.symbols[i]) {
-			return i;
-		}
-	}
-
-	return -3;
 }
 
 const parseLanguage = language => {
