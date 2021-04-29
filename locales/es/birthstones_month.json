@@ -1,0 +1,14 @@
+{
+	"january": ["granate"],
+	"february": ["amatista"],
+	"march": ["aguamarina", "heliotropo"],
+	"april": ["diamante"],
+	"may": ["esmeralda"],
+	"june": ["alejandrita", "piedra de luna", "perla"],
+	"july": ["rubí"],
+	"august": ["peridotita", "sardónice", "espinela"],
+	"september": ["zafiro"],
+	"october": ["ópalo", "turmalina"],
+	"november": ["citrino", "topacio"],
+	"december": ["tanzanita", "turquesa", "circón"]
+}
