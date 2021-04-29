@@ -1,0 +1,9 @@
+{
+	"monday": ["perla", "cristallo"],
+	"tuesday": ["rubino", "smeraldo"],
+	"wednesday": ["ametista", "magnetite"],
+	"thursday": ["zaffiro", "corniola"],
+	"friday": ["smeraldo", "occhio di tigre"],
+	"saturday": ["turchese", "diamante"],
+	"sunday": ["topazio", "diamante"]
+}

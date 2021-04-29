@@ -1,0 +1,14 @@
+{
+	"january": ["granato"],
+	"february": ["ametista"],
+	"march": ["acquamarina", "eliotropio"],
+	"april": ["diamante"],
+	"may": ["smeraldo"],
+	"june": ["alessandrite", "pietra di luna", "perla"],
+	"july": ["rubino"],
+	"august": ["peridotiti", "sardonica", "spinello"],
+	"september": ["zaffiro"],
+	"october": ["opale", "tormalina"],
+	"november": ["citrino", "topazio"],
+	"december": ["tanzanite", "turchese", "zircone"]
+}
