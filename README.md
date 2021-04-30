@@ -56,16 +56,7 @@ console.log(birthgem.day(1, 'fr'));
 
 ### Displaying a zodiac sign birthstone
 
-*Those functions are deprecated. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
-
-```js
-// Returns the birthstone of the zodiac sign Aries (values: zodiac signs names and symbols)
-console.log(birthgem.zodiac('aries'));
-console.log(birthgem.zodiac('♈');
-// Overload the default language (format xx-YY sets (format xx)
-console.log(birthgem.zodiac('aries', 'fr'));
-console.log(birthgem.zodiac('♈', 'fr');
-```
+*Those functions have been removed. Use the package [zodiac-signs](https://www.npmjs.com/package/zodiac-signs) instead.*
 
 ## Error management
 
@@ -75,18 +66,19 @@ An integer is returned if the given parameter is wrong:
 |--------|--------------------------------|------------|
 | Day    | [1;7]                          | -1         |
 | Month  | [1;12]                         | -2         |
-| Zodiac | zodiac signs names and symbols | -3         |
 
 ## Translation
 
-For the moment, the only avaible languages are English and French.
-
-Obviously, you are free to participate to the translation in any other language.
+You are free to participate to the translation in any other language.
 
 ### Avaible languages
 
 - English
 - French
+- German
+- Italian
+- Portuguese
+- Spanish
 
 ## Thanks
 
