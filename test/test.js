@@ -39,12 +39,12 @@ describe('birthgem.month(month)', function() {
 	it('should get the birthstone(s) based on the month number given (French override)', function() {
         assert.deepEqual(birthgem.month(1, 'fr'), ['grenat']);
         assert.deepEqual(birthgem.month(2, 'fr'), ['améthyste']);
-        assert.deepEqual(birthgem.month(3, 'fr'), ['aquamarine', 'héliotrope']);
+        assert.deepEqual(birthgem.month(3, 'fr'), ['aigue-marine', 'héliotrope']);
         assert.deepEqual(birthgem.month(4, 'fr'), ['diamant']);
         assert.deepEqual(birthgem.month(5, 'fr'), ['émeraude']);
         assert.deepEqual(birthgem.month(6, 'fr'), ['alexandrite', 'pierre de lune', 'perle']);
         assert.deepEqual(birthgem.month(7, 'fr'), ['rubis']);
-        assert.deepEqual(birthgem.month(8, 'fr'), ['péridot', 'sardonyx', 'spinel']);
+        assert.deepEqual(birthgem.month(8, 'fr'), ['péridotite', 'sardonyx', 'spinelle']);
         assert.deepEqual(birthgem.month(9, 'fr'), ['saphir']);
         assert.deepEqual(birthgem.month(10, 'fr'), ['opale', 'tourmaline']);
         assert.deepEqual(birthgem.month(11, 'fr'), ['citrine', 'topaze']);
