@@ -1,7 +1,7 @@
 {
 	"name": "birthgem",
 	"version": "1.2.0",
-	"description": "Determines the birthstones from the given month, day of the week or zodiac sign.",
+	"description": "Determines the birthstones from the given month or day of the week.",
 	"main": "index.js",
 	"directories": {
 		"test": "test"
