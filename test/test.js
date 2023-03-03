@@ -7,12 +7,12 @@ describe('birthgem.month()', function() {
 	});
 	
 	it('should get the birthstone(s) based on the current month (French override)', function() {
-        assert.deepEqual(birthgem.month(undefined, 'fr'), birthgem.month(new Date().getMonth() + 1), 'fr');
+        assert.deepEqual(birthgem.month(undefined, 'fr'), birthgem.month(new Date().getMonth() + 1, 'fr'));
     });
 
     it('should get the birthstone(s) based on the current month (French override)', function() {
-        assert.deepEqual(birthgem.month(undefined, 'fr'), birthgem.month(new Date().getMonth() + 1), 'fr');
-        assert.deepEqual(birthgem.month(undefined, 'fr'), birthgem.month(new Date().getMonth() + 1), 'fr-FR');
+        assert.deepEqual(birthgem.month(undefined, 'fr'), birthgem.month(new Date().getMonth() + 1, 'fr'));
+        assert.deepEqual(birthgem.month(undefined, 'fr-FR'), birthgem.month(new Date().getMonth() + 1, 'fr-FR'));
     });
 
     it('should get the birthstone(s) based on the current month in English (invallid language override)', function() {
