@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Helmasaur/Birthgem.git"
+		"url": "git+https://github.com/helmasaur/birthgem.git"
 	},
 	"keywords": [
 		"birth",
@@ -27,9 +27,9 @@
 	"author": "Helmasaur",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Helmasaur/Birthgem/issues"
+		"url": "https://github.com/helmasaur/birthgem/issues"
 	},
-	"homepage": "https://github.com/Helmasaur/Birthgem#readme",
+	"homepage": "https://github.com/helmasaur/birthgem#readme",
 	"devDependencies": {
 		"mocha": "^8.3.2"
 	}
